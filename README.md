@@ -73,7 +73,6 @@ fastapi dev app/main.py
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-source .venv/bin/activate
 python main.py
 # или с другим адресом backend'а:
 python main.py --api-url http://192.168.1.10:8000
