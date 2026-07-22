@@ -62,7 +62,6 @@ sudo apt install libxcb-cursor0 libxkbcommon-x11-0
 Сначала backend:
 
 ```bash
-cd back_zip
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export NETWORK_CORE_MODE=demo
@@ -72,7 +71,8 @@ fastapi dev app/main.py
 Затем клиент:
 
 ```bash
-cd network_client
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
 source .venv/bin/activate
 python main.py
 # или с другим адресом backend'а:
