@@ -41,7 +41,7 @@ main.py    Точка входа, CLI-параметр --api-url.
 View никогда не вызывает `requests` напрямую, ViewModel никогда не
 создаёт `QWidget`.
 
-## Установка на Kali Linux
+## Установка
 
 ```bash
 cd network_client
@@ -49,9 +49,6 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-
-Если каких-то Qt-библиотек не хватает на уровне системы (PySide6 тянет
-свои бинарники, но иногда нужны системные X11-либы):
 
 ```bash
 sudo apt install libxcb-cursor0 libxkbcommon-x11-0
@@ -75,5 +72,5 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python main.py
 # или с другим адресом backend'а:
-python main.py --api-url http://192.168.1.10:8000
+python main.py --api-url http://127.0.0.1:8000
 ```
