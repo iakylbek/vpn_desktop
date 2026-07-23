@@ -1,13 +1,3 @@
-"""
-ViewModel для главного экрана — списка сетевых профилей.
-
-Правило MVVM, которое здесь важно соблюсти: ViewModel не импортирует
-ничего из QtWidgets и не знает, что где-то есть QTableView или QDialog.
-Он выставляет наружу:
-  - свойства/сигналы состояния (profiles_changed, error, busy_changed);
-  - команды (load_profiles, activate, deactivate, delete, ...).
-View просто подписывается на сигналы и дёргает команды.
-"""
 from __future__ import annotations
 
 from PySide6.QtCore import QObject, Signal

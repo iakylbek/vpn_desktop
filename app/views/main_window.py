@@ -1,11 +1,3 @@
-"""
-View: главное окно приложения.
-
-Это единственное место, где допустимо напрямую собирать QWidget'ы.
-MainWindow ничего не знает про requests/HTTP — он дёргает команды
-ProfilesListViewModel и ProfileDetailsViewModel и подписывается
-на их сигналы, чтобы обновить таблицу/панели.
-"""
 from __future__ import annotations
 
 from PySide6.QtCore import Qt

@@ -1,10 +1,3 @@
-"""
-ViewModel панели деталей: runtime-статус выбранного профиля и его логи.
-
-Отдельный ViewModel, потому что у него собственный жизненный цикл —
-он должен переопрашивать /runtime и /logs по таймеру, пока профиль
-выбран, независимо от списка профилей.
-"""
 from __future__ import annotations
 
 from PySide6.QtCore import QObject, QTimer, Signal

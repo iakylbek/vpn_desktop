@@ -1,10 +1,3 @@
-"""
-Model-слой.
-
-Здесь только данные и их представление — никакой сетевой логики,
-никакого Qt. Это то, чем оперируют ViewModel'и и что приходит
-от backend'а (после разбора JSON).
-"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field

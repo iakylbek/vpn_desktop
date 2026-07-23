@@ -1,10 +1,3 @@
-"""
-QAbstractTableModel — это "M" в терминологии самого Qt, но в нашей
-MVVM-архитектуре он живёт внутри View-слоя: это чисто техническая
-обёртка, которая знает, как показать list[NetworkProfile] в QTableView.
-Бизнес-логику (когда грузить, что делать при ошибке и т.д.) он не содержит —
-это уже отвечает ProfilesListViewModel.
-"""
 from __future__ import annotations
 
 from PySide6.QtCore import QAbstractTableModel, QModelIndex, Qt

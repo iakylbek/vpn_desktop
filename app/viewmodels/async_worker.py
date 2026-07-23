@@ -1,12 +1,3 @@
-"""
-Небольшой помощник для асинхронных вызовов ApiClient из ViewModel.
-
-PySide-виджеты живут в главном (UI) потоке. Если делать HTTP-запрос
-прямо там, окно "подвисает" на время запроса. Поэтому каждый вызов
-ApiClient оборачивается в ApiWorker и выполняется в отдельном QThread;
-результат возвращается в UI-поток через сигналы (Qt сам обеспечивает
-thread-safety сигналов/слотов).
-"""
 from __future__ import annotations
 
 from typing import Any, Callable
